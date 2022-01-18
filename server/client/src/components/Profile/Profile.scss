@@ -1,0 +1,98 @@
+@import "../../Theme.scss";
+
+.profile {
+    margin-top: 20px;
+
+    .profile_header {
+        width: 50%;
+        min-height: 200px;
+        margin: 0px auto;
+
+        .profile_header_container {
+            min-height: 200px;
+            width: 90%;
+            margin: 0px auto;
+            @include flexbox;
+
+            .profile_header_image {
+                width: 160px;
+                min-height: 200px;
+
+                img {
+                    margin-top: 20px;
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .profile_header_details {
+                min-height: 200px;
+                width: calc(100% - 285px);
+
+                @include flexbox;
+                justify-content: flex-start;
+                flex-direction: column;
+
+                .profile_header_details_name {
+                    height: 50px;
+                    width: 90%;
+                    @include flexbox;
+                    margin-top: 20px;
+                    justify-content: flex-start;
+                }
+
+                .profile_header_details_email {
+                    height: 50px;
+                    width: 90%;
+                    @include flexbox;
+                    justify-content: flex-start;
+                }
+
+                .profile_header_details_total {
+                    min-height: 30px;
+                    width: 90%;
+                    margin-top: 10px;
+
+                    @include flexbox;
+                    justify-content: flex-start;
+
+                    .profile_header_details_posts {
+                        height: 100%;
+                        width: 26%;
+                        @include flexbox;
+                        justify-content: flex-start;
+                    }
+
+                    .profile_header_details_followers {
+                        height: 100%;
+                        width: 35%;
+                        @include flexbox;
+                        justify-content: flex-start;
+                    }
+                    .profile_header_details_following {
+                        height: 100%;
+                        width: 32%;
+                        @include flexbox;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profile-images {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 180px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding-left: 4px;
+    padding-right: 4px;
+}

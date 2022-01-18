@@ -1,0 +1,14 @@
+// Colors
+
+$green: #26a69a;
+$white: #ffffff;
+$black: #000000;
+
+
+// Mixins
+
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

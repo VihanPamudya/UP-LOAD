@@ -1,0 +1,149 @@
+@import "../../Theme.scss";
+
+.home {
+    width: 100%;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+    height: max-content;
+    margin-top: 1.5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-row-gap: 30px;
+}
+
+.cards {
+    width: 500px;
+    height: max-content;
+    background-color: $white;
+    border: 2px solid rgba($color: grey, $alpha: 0.2);
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+.card_header {
+    width: 100%;
+    height: 100px;
+    .card_user_image {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        img {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+    }
+    .card_user_details {
+        width: 375px;
+        height: 38px;
+        position: relative;
+        bottom: 40px;
+        left: 60px;
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: 258px;
+    position: relative;
+    bottom: 35px;
+
+    img {
+        width: 100%;
+        height: 258px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.card-content {
+    padding: 15px;
+    margin-top: -35px;
+}
+
+.input-feild-home input[type="text"]:focus:not([read-only]) {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 black;
+}
+
+/* Media Queries */
+
+/* ----- WIDTH ----- */
+
+/* MAX-WIDTH : 600px */
+@media (max-width: 600px) {
+    .cards {
+        width: 400px;
+        margin-left: 16.5%;
+    }
+}
+
+/* MAX-WIDTH : 500px */
+@media (max-width: 500px) {
+    .cards {
+        width: 340px;
+        margin-left: 16%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 218px;
+        position: relative;
+        bottom: 35px;
+
+        img {
+            width: 100%;
+            height: 218px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+/* MAX-WIDTH : 400px */
+@media (max-width: 400px) {
+    .cards {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 178px;
+        position: relative;
+        bottom: 35px;
+
+        img {
+            width: 100%;
+            height: 178px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+/* MAX-WIDTH : 300px */
+@media (max-width: 300px) {
+    .cards {
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 138px;
+        position: relative;
+        bottom: 35px;
+
+        img {
+            width: 100%;
+            height: 138px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

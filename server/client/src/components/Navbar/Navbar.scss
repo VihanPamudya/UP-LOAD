@@ -1,0 +1,95 @@
+@import "../../Theme.scss";
+
+.logout-button {
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-right: 25px;
+    background-color: red;
+    color: $white;
+    border: 2px solid red;
+    transition: all 0.5s ease-in-out;
+    width: 85px;
+    height: 30px;
+    cursor: pointer;
+}
+.logout-button:hover {
+    border: 2px solid red;
+    color: red;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.navbar__search__icon {
+    color: $black;
+}
+
+.nav_log {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#links_a {
+    font-size: 35px;
+}
+
+.nav-wrapper {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+/* Media Queries */
+
+/* ----- WIDTH ----- */
+
+/* MAX-WIDTH : 600px */
+@media (max-width: 600px) {
+    .brand-logo {
+        margin-left: 43px;
+    }
+
+    .nav_log {
+        width: 32px;
+        height: 32px;
+        margin-top: 10px;
+        margin-left: 18px;
+    }
+
+    #links_a {
+        font-size: 30px;
+    }
+
+    .logout-button {
+        width: 80px;
+        margin-left: 10px;
+        margin-right: 18px;
+    }
+
+    nav ul a {
+        padding: 0 8px;
+    }
+}
+
+/* MAX-WIDTH : 300px */
+@media (max-width: 300px) {
+    .brand-logo {
+        margin-left: 35px;
+    }
+
+    .nav_log {
+        width: 27px;
+        height: 27px;
+        margin-top: 14px;
+        margin-left: 13px;
+    }
+
+    #links_a {
+        font-size: 25px;
+    }
+}

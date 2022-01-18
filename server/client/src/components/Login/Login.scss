@@ -1,0 +1,199 @@
+@import "../../Theme.scss";
+
+.background_login {
+  background-image: url("../BackgroundImages/6.jpg");
+}
+
+.login_mycard {
+  margin-top: -3%;
+  margin-left: -250px;
+}
+
+.login_auth-card {
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  height: 500px;
+  border-radius: 3%;
+}
+
+.card {
+  margin: 0px;
+}
+
+.login_input_feild_email {
+  position: relative;
+  margin-top: 82px;
+  margin-bottom: 1rem;
+}
+
+.login_input_feild_password {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.login_input_feild_email .prefix,
+.login_input_feild_password .prefix {
+  position: absolute;
+  width: 3rem;
+  font-size: 2rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  top: 0.5rem;
+  color: grey;
+  margin-left: 1px;
+}
+
+.material-icons {
+  line-height: 1.5;
+}
+
+.login_input_feild_email .prefix.active,
+.login_input_feild_password .prefix.active {
+  color: $black;
+}
+
+.login_input_feild_email input[type="text"]:focus:not([read-only]) {
+  border-bottom: 1px solid $black;
+  box-shadow: 0 1px 0 0 $black;
+}
+
+.login_input_feild_email input[type="password"]:focus:not([read-only]) {
+  border-bottom: 1px solid $black;
+  box-shadow: 0 1px 0 0 $black;
+}
+
+.login_input_feild_password input[type="text"]:focus:not([read-only]) {
+  border-bottom: 1px solid $black;
+  box-shadow: 0 1px 0 0 $black;
+}
+
+.login_input_feild_password input[type="password"]:focus:not([read-only]) {
+  border-bottom: 1px solid $black;
+  box-shadow: 0 1px 0 0 $black;
+}
+
+.button {
+  outline: none;
+  width: 100%;
+  min-width: 100px;
+  padding: 8px 10px;
+  background-color: $green;
+  color: $white;
+  border: 2px solid $green;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  width: 150px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid $green;
+  color: $green;
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.background_login {
+  padding-left: 33.33%;
+  padding-top: 75px;
+  background-size: 750px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.topic {
+  color: $green;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* Media Queries */
+
+/* ----- WIDTH ----- */
+
+/* MAX-WIDTH : 600px */
+@media (max-width: 600px) {
+  .background_login {
+    padding-left: 17%;
+  }
+  .login_auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 3%;
+    height: 450px;
+  }
+  .login_input_feild_email {
+    position: relative;
+    margin-top: 57px;
+    margin-bottom: 1rem;
+  }
+  .button {
+    margin-top: 40px;
+  }
+}
+
+/* MAX-WIDTH : 500px */
+@media (max-width: 500px) {
+  .background_login {
+    padding-left: 14%;
+  }
+  .login_auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 360px;
+    border-radius: 3%;
+    height: 450px;
+  }
+  .login_input_feild_email {
+    position: relative;
+    margin-top: 57px;
+    margin-bottom: 1rem;
+  }
+  .button {
+    margin-top: 40px;
+  }
+}
+
+/* MAX-WIDTH : 400px */
+@media (max-width: 400px) {
+  .background_login {
+    padding-left: 10%;
+  }
+  .login_auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 90%;
+    border-radius: 3%;
+    height: 450px;
+  }
+  .login_input_feild_email {
+    position: relative;
+    margin-top: 57px;
+    margin-bottom: 1rem;
+  }
+  .button {
+    margin-top: 40px;
+    /* max-width: 60px; */
+  }
+}
+
+/* MAX-WIDTH : 300px */
+@media (max-width: 300px) {
+  .button {
+    margin-top: 40px;
+    width: 120px;
+  }
+
+  .topic {
+    font-size: 30px;
+  }
+
+  .login_auth-card {
+    padding: 15px;
+  }
+}

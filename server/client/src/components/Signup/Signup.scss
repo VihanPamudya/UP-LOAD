@@ -1,0 +1,161 @@
+@import "../../Theme.scss";
+
+.background_signup {
+  background-image: url("../BackgroundImages/6.jpg");
+}
+.signup_mycard {
+  margin-top: -3%;
+  margin-left: -250px;
+}
+.signup_auth-card {
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  height: 500px;
+  border-radius: 3%;
+}
+
+.signup_input-feild {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.signup_input-feild .prefix {
+  position: absolute;
+  width: 3rem;
+  font-size: 2rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  top: 0.5rem;
+  color: grey;
+  margin-left: 1px;
+}
+
+.material-icons {
+  line-height: 1.5;
+}
+
+.signup_input-feild .prefix.active {
+  color: $black;
+}
+
+.signup_input-feild input[type="text"]:focus:not([read-only]) {
+  border-bottom: 1px solid $black;
+  box-shadow: 0 1px 0 0 $black;
+}
+
+.signup_input-feild input[type="password"]:focus:not([read-only]) {
+  border-bottom: 1px solid $black;
+  box-shadow: 0 1px 0 0 $black;
+}
+
+.btn {
+  border-radius: 20px;
+  width: 135px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-left: 15px;
+  background-color: $green;
+  color: $white;
+  border: 2px solid $green;
+  transition: all 0.5s ease-in-out;
+  width: 150px;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 2px solid $green;
+  color: $green;
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.background_signup {
+  padding-left: 33.33%;
+  padding-top: 75px;
+  background-size: 750px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/* Media Queries */
+
+/* ----- WIDTH ----- */
+
+/* MAX-WIDTH : 600px */
+@media (max-width: 600px) {
+  .background_signup {
+    padding-left: 17%;
+  }
+  .signup_auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 3%;
+    height: 450px;
+  }
+  .signup_input-feild {
+    position: relative;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* MAX-WIDTH : 500px */
+@media (max-width: 500px) {
+  .background_signup {
+    padding-left: 14%;
+  }
+  .signup_auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 360px;
+    border-radius: 3%;
+    height: 450px;
+  }
+  .signup_input-feild {
+    position: relative;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* MAX-WIDTH : 400px */
+@media (max-width: 400px) {
+  .background_signup {
+    padding-left: 10%;
+  }
+  .signup_auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 90%;
+    border-radius: 3%;
+    height: 450px;
+  }
+  .signup_input-feild {
+    position: relative;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* MAX-WIDTH : 300px */
+@media (max-width: 300px) {
+  .button {
+    margin-top: 40px;
+    width: 120px;
+  }
+  .btn {
+    border-radius: 20px;
+    font-size: 11px;
+    width: 125px;
+    max-height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-left: 12px;
+  }
+}
+
+/* MAX-WIDTH : 300px */
+@media (max-width: 300px) {
+  .signup_auth-card {
+    padding: 15px;
+  }
+}

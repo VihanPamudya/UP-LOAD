@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+.links_a{
+  color: black !important;
+}
+
+.gallery::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.item{
+  width: 30%;
+}
+
+#toast-container{
+  top: 60px !important;
+  right: 10px !important;
+  left: auto !important;
+}
+
+.material-icons:hover{
+  cursor: pointer;
+}
+
+.collection-item{
+  width: 100%;
+}
