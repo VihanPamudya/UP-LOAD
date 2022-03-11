@@ -10,6 +10,7 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
 .login_auth-card {
   padding: 20px;
   text-align: center;
@@ -218,5 +219,12 @@ button:hover {
 
   .login_auth-card {
     padding: 15px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .login_mycard {
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
 }

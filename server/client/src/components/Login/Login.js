@@ -56,7 +56,7 @@ const Login = () => {
       });
   };
   return (
-    <div className="container">
+    <div className="container" style={{backgroundColor:"lightblue"}}>
       <div className="login_mycard">
         <div className="card login_auth-card">
           <h4 className="topic">
